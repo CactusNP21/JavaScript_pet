@@ -1,0 +1,79 @@
+.main-container{
+    width: 50%;
+    margin: auto;
+    height: 90vh;
+}
+
+.header{
+    text-align: center;
+}
+
+.logic{
+    display: flex;
+    justify-content: center;
+}
+
+.to-do-list{
+    display: flex;
+    justify-content: center;
+}
+
+.logic div{
+    align-self: center;
+    width: 50%;
+}
+
+#input-task{
+    width: 75%;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    border-bottom: 2px solid rebeccapurple;
+    font-size: 25px;
+    outline: none;
+}
+
+#add-task-button{
+    border: 0;
+    padding: 0;
+    width: 24%;
+    height: 50px;
+}
+
+#task-list{
+    list-style-type: none;
+    width: 50%;
+    padding: 0;
+    position: relative;
+}
+
+.delete-btn{
+    position: absolute;
+    left: 90%;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: red;
+}
+
+.check-btn{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.task{
+    font-size: 25px;
+}
+
+.task-done{
+    font-size: 25px;
+    text-decoration: line-through;
+}

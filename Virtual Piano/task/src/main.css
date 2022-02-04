@@ -6,57 +6,6 @@
 body{
     background-color: darkblue;
 }
-.white-keys kbd{
-    background-color: white;
-    display: inline-block;
-    height: 400px;
-    width: 100px;
-    margin-left: 0;
-    border: solid 2px;
-    text-align: center;
-    font-family: "Fira Code", sans-serif;
-    font-size: 20px;
-
-
-}
-
-.black-keys kbd{
-    background-color: black;
-    display: inline-block;
-    height: 200px;
-    width: 50px;
-    margin-left: 0;
-    text-align: center;
-    color: white;
-}
-
-.id\=W, .id\=E, .id\=T, .id\=Y, .id\=U{
-    position: absolute;
-    z-index: 5;
-    top: 29%;
-}
-
-.id\=W{
-    left: var(--left);
-    top: 29%;
-}
-
-.id\=E{
-    left: calc(var(--left) + var(--step));
-}
-
-.id\=T{
-    left: calc(var(--left) + var(--step) * 3);
-}
-
-.id\=Y{
-    left: calc(var(--left) + var(--step) * 4);
-}
-
-.id\=U{
-    left: calc(var(--left) + var(--step) * 5);
-}
-
 
 .container{
     position: relative;
@@ -68,8 +17,46 @@ body{
     justify-content: center;
 }
 
-.newcontainer{
+.white-keys{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+}
+
+.white-keys kbd{
+    background-color: white;
+    display: inline-block;
+    height: 400px;
+    width: 100px;
+    margin-left: 0;
+    border: solid 2px;
+    text-align: center;
+    font-family: "Fira Code", sans-serif;
+    font-size: 20px;
+
+}
+
+.black-keys{
+    position: absolute;
+}
+
+.black-keys kbd{
+    background-color: black;
+    height: 200px;
+    width: 50px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 0;
+}
+
+#W{
+    margin-left: 80px;
+}
+
+#E{
+    margin-left: 49px;
+    margin-right: 155px;
+}
+#Y, #U{
+    margin-left: 50px;
 }
